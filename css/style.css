@@ -221,6 +221,26 @@ header h1 a:hover {
     border-radius: 10%;
     border: 3px solid #ff7e5f;
     margin-top: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.athlete img:hover {
+    border: 3px solid #2c3fed;
+}
+
+/*Images floating*/
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Athlete Name */
@@ -302,10 +322,22 @@ header h1 a:hover {
     color: #000000;    }
 }
 
+@media (prefers-reduced-motion) {
+    #container{
+        display: none;
+    }
+    body>h1:first-child {
+        animation: none;
+    }
+    .athlete img {
+        animation: none;
+    }
+}
+
+/* Animation for coffee cup start here */
 #container {
 margin: 0 auto;
-width: 50%;
-/* display: none; */
+width: 70%;
 margin-bottom: 30px;
 margin-top: 30px;
 }
@@ -335,7 +367,7 @@ margin-top: 30px;
 @-webkit-keyframes steam1 {
     0% {
         transform: translateY(0) translateX(0) scale(0.25);
-        opacity: 0.2;
+        opacity: 0.4;
     }
 
     100% {
@@ -347,7 +379,7 @@ margin-top: 30px;
 @keyframes steam1 {
     0% {
         transform: translateY(0) translateX(0) scale(0.25);
-        opacity: 0.2;
+        opacity: 0.4;
     }
 
     100% {
@@ -369,7 +401,7 @@ margin-top: 30px;
 @-webkit-keyframes steam2 {
     0% {
         transform: translateY(0) translateX(0) scale(0.25);
-        opacity: 0.2;
+        opacity: 0.4;
     }
 
     100% {
@@ -381,7 +413,7 @@ margin-top: 30px;
 @keyframes steam2 {
     0% {
         transform: translateY(0) translateX(0) scale(0.25);
-        opacity: 0.2;
+        opacity: 0.4;
     }
 
     100% {
