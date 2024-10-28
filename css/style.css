@@ -8,21 +8,50 @@
 
 .links a {
     display: inline-block;
-    padding: 15px 25px;
+    padding: 10px 15px;
     background-color: #96f3cc;
-    color: #000000;
-    /* border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease; */
+    border-radius: 5px;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(220, 227, 170)
+    background-color: rgb(220, 227, 170);
+    color:#000000
 }
 
 h1 {
+        background-color: #96db99;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+footer {
+    background-color: #9182dc;
     text-align: center;
-    font-size: 2.5em;
-    /* Adjust the size as needed */
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    background-color: #ffb7b7;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
