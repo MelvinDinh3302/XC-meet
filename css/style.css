@@ -246,3 +246,43 @@ header h1 a:hover {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #120c0c;
+    }
+    #individual-results {
+        background-color: #3b3636;
+    }
+    .summary {
+        background-color: #474747;
+        border: 2px solid #0479f5;
+    }
+    .summary p {
+        color: white;
+    }
+    .summary h2 {
+        color: #7cbcff;
+    }
+    .athlete {
+        color: #7cbcff;    
+    }
+    .athlete figcaption {
+        color: #FFFFFF;
+    }
+    #individual-results h2 {
+        color: white;
+    }
+    .athlete dt {
+        color: #ffafaf;
+    }
+    .athlete dd {
+        color: #ffffff;
+    }
+    body>a:first-child:link,
+    body>a:first-child:visited,
+    body>a:first-child:hover,
+    body>a:first-child:active {
+    background-color: #d95b5b;
+    color: #000000;    }
+}
