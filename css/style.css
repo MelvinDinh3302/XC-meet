@@ -11,6 +11,7 @@
     padding: 10px 15px;
     background-color: #96f3cc;
     border-radius: 5px;
+    border: 2px solid #000000;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     color:#000000
 }
 
-h1 {
+.title1 {
         background-color: #96db99;
         padding: 20px 0;
         text-align: center;
@@ -54,4 +55,57 @@ footer a {
     display: inline-block;
     background-color: #ffffff;
     border-radius: 5px;
+}
+
+body > a:first-child {
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #cae7db;
+    border-radius: 5px;
+}
+
+.summary {
+    background-color: #f0f8ff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px gray; /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+}
+
+.summary:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px gray;
+}
+
+.summary h2 {
+    color: #007bff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.summary p {
+    color: #333;
+    font-size: 1em;
+}
+
+header {
+    background-color: #124714;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 a {
+    color: #FFD700;
+    text-decoration: none; /* Remove underline from the link */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+header h1 a:hover {
+    color: #89ece5; /*Change color when hovered over*/
 }
