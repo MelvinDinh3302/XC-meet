@@ -54,6 +54,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     gap: 10px;
     padding: 0;
     justify-content: center;
@@ -333,10 +334,27 @@ header h1 a:hover {
     }
 }
 
+/* Desktop view */
+@media (min-width: 1024px) {
+#individual-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 16px;
+
+}
+#individual-results> :first-child {
+    /* Title is ignored */
+    grid-column: span 3;
+}
+nav ul {
+    flex-direction: row;
+}
+}
+
 /* Animation for coffee cup start here */
 #container {
 margin: 0 auto;
-width: 80%;
+/* width: 80%; */
 margin-bottom: 30px;
 margin-top: 30px;
 }
